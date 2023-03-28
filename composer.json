@@ -1,0 +1,51 @@
+{
+    "name": "chuckcms/ui",
+    "description": "A set of renderless components to utilise in your ChuckCMS applications.",
+    "keywords": ["ChuckCMS", "Blade", "UI", "Laravel"],
+    "homepage": "https://github.com/chuckcms/ui",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/chuckcms/ui/issues",
+        "source": "https://github.com/chuckcms/ui"
+    },
+    "authors": [
+        {
+            "name": "Karel Brijs",
+            "homepage": "https://chuck.be"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "ext-json": "*",
+        "illuminate/filesystem": "^7.0|^8.0|^9.0",
+        "illuminate/support": "^7.0|^8.0|^9.0",
+        "illuminate/view": "^7.0|^8.0|^9.0",
+        "nesbot/carbon": "^2.38",
+        "laravel/ui": "^3.0|^4.1"
+    },
+    "require-dev": {
+        "gajus/dindent": "^2.0",
+        "guzzlehttp/guzzle": "^7.4",
+        "league/commonmark": "^1.4|^2.0",
+        "lorisleiva/cron-translator": "^0.1.1",
+        "orchestra/testbench": "^5.0|^6.0|^7.1",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ChuckUI\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ChuckUI\\ChuckUIServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
